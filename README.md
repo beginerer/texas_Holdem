@@ -1,5 +1,9 @@
 # texas_Holdem
 
+## 아키텍처
+<img width="706" alt="스크린샷 2025-03-01 오후 9 48 02" src="https://github.com/user-attachments/assets/c178bf6a-7610-4a31-b431-0d79176e5aa6" />
+
+
 ## ERD
 <img width="1190" alt="스크린샷 2025-03-01 오후 8 41 58" src="https://github.com/user-attachments/assets/1edbd67c-de1c-417e-9db4-31fe77db9ad6" />
 
