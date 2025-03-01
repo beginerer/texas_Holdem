@@ -1,5 +1,9 @@
 # texas_Holdem
 
+## ERD
+<img width="1190" alt="스크린샷 2025-03-01 오후 8 41 58" src="https://github.com/user-attachments/assets/1edbd67c-de1c-417e-9db4-31fe77db9ad6" />
+
+
 
 ## 게임 상태 보드
 <img width="974" alt="스크린샷 2025-03-01 오후 7 33 08" src="https://github.com/user-attachments/assets/f8db1599-ce52-409c-8f48-a1d998e0f6d8" />
