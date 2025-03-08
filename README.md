@@ -1,5 +1,8 @@
 # texas_Holdem
 
+## video
+**[youtube demo video](https://youtu.be/u08yHJ3RNPE?feature=shared)**
+
 ## 아키텍처
 <img width="706" alt="스크린샷 2025-03-01 오후 9 48 02" src="https://github.com/user-attachments/assets/c178bf6a-7610-4a31-b431-0d79176e5aa6" />
 
