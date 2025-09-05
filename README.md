@@ -1,7 +1,13 @@
-# texas_Holdem
+# texas_Holdem Game
 
-## video
-**[youtube demo video](https://youtu.be/u08yHJ3RNPE?feature=shared)**
+## 시연 영상
+**[youtube 시연 영상](https://youtu.be/u08yHJ3RNPE?feature=shared)**
+
+## 기능
+- 스프링 이벤트를 활용하여 게임의 상태를 도메인 이벤트로 분해하고, 이벤트 핸들러가 처리하는 방식으로 구현
+- Stomp 프로토콜을 사용해서, 플레이어간 통신 기능 개발
+- Map<Long, ScheduledFuter<?>> 자료구조를 사용해서 플레이가 레디할때 마다 상태를 업데이트하고, 만약 모든 플레이어가 준비완료 상태라면 자동으로 게임을 시작하는 기능 개발
+
 
 ## 아키텍처
 <img width="706" alt="스크린샷 2025-03-01 오후 9 48 02" src="https://github.com/user-attachments/assets/c178bf6a-7610-4a31-b431-0d79176e5aa6" />
@@ -17,11 +23,8 @@
 <img width="983" alt="스크린샷 2025-03-01 오후 7 33 14" src="https://github.com/user-attachments/assets/51648812-b8eb-4866-bce2-8b2fa35e7804" />
 
 ## 플레이어 stomp 통신
-- 텍사스 홀덤 게임 로직을 '이벤트 기반 아키텍처'를 활용해서 비동기 통신을 가능하겠습니다.
-- Map<Long, ScheduledFuter<?>> 자료구조를 사용해서 플레이가 레디할때 마다 상태를 업데이트하고, 만약 모든 플레이어가 준비완료 상태라면 자동으로 게임을 시작하게 만들었습니다.
-- /sub/game/{gameId}/{gamePlayerId}로 플레이별로 stomp 데이터를 전송했습니다.
-- 카드 객체의 hidden 필드를 사용해서 hidden값이 true인 경우 마스킹 처리해여 전송합니다.
-- 해당 플레이어의 차례인 경우 별도의 배팅옵션 dto를 전송했습니다.
+- /sub/game/{gameId}/{gamePlayerId}로 플레이별로 stomp 데이터 전송
+- 카드 객체의 hidden 필드를 활용하여 플레이어는 공유 카드 및 자신의 카드만 확인 가능
 ``` java
 {
   "gameId": 1,
